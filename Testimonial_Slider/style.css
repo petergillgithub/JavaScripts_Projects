@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  display: flex; /* enables flexbox */
+  justify-content: center; /* centers horizontally */
+  align-items: center; /* centers vertically */
+  height: 100vh; /* full viewport height */
+  width: 100%; /* full width */
+  background: linear-gradient(
+    orange,
+    pink,
+    rgb(133, 133, 164)
+  ); /* optional, just to see the container */
+}
+
+/* Optional styling for the slider */
+.container_slider {
+  m;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding:11rem;
+  background-color: white;
+  border-radius: 3rem 0rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  max-width: 80rem; /* optional, controls slider width */
+  background: linear-gradient(rgb(170, 169, 169), white, rgb(161, 160, 160), white, pink);
+}
+img {
+  position: absolute;
+  top: 175px;
+  /* margin-bottom: 4rem; */
+  border-radius: 50%;
+  width: 14rem;
+  height: 15rem;
+  object-fit: cover;
+  border: 3px solid #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.container_slider #details {
+  text-align: start;
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.9rem;
+  font-weight: 500;
+}
+
+.container_slider #name {
+  text-align: start;
+  font-size: 1.3rem;
+  margin-top: 2rem;
+}
