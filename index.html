@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <title>QR Code Generator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="flex justify-center items-center min-h-screen bg-gray-800">
+      <div
+        class="carousel bg-white-300 flex flex-col justify-center items-center w-200 h-120 rounded-lg shadow-lg p-6 outline-2 outline-blue-500/100 bg-white"
+      >
+        <img
+          id="person-img"
+          src=""
+          alt="person-img"
+          class="w-40 h-40 rounded-full mb-4"
+        />
+        <h1 id="author" class="text-2xl font-bold"></h1>
+        <h5 id="job" class="text-gray-600 mb-4"></h5>
+        <p id="text" class="text-center mb-6"></p>
+
+        <div class="btns flex gap-4">
+          <button
+            id="nextBtn"
+            class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded"
+          >
+            <i class="fa-solid fa-forward"></i>
+          </button>
+          <button
+            id="prevBtn"
+            class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded"
+          >
+            <i class="fa-solid fa-backward"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="qrcode.js"></script>
+  </body>
+</html>
